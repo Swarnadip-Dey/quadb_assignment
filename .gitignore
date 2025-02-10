@@ -1,0 +1,30 @@
+# Node.js dependencies
+/node_modules/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (for frontend)
+build/
+dist/
+
+# Flask specific
+*.pyc
+*.pyo
+__pycache__/
+
+# Environment variables
+.env
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Docker-related files
+docker-compose.override.yml
