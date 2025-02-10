@@ -3,7 +3,7 @@ version: '3.8'
 services:
   frontend:
     build:
-      context: ./blockchain-frontend
+      context: ./frontend
     ports:
       - "3000:80"
     depends_on:
