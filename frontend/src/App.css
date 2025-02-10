@@ -1,0 +1,152 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Ensure the background covers the whole viewport */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tabs button:hover {
+  background-color: #ccc;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #007bff; /* Updated to a more standard blue */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.blockchain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.block {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px; /* Fixed width for consistent appearance */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-break: break-word; /* Prevent long strings from overflowing */
+}
+
+.block h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.block p {
+  color: #555;
+  margin-bottom: 5px;
+  font-size: 0.9em; /* Slightly smaller font for better readability */
+}
+
+.block h4 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.block ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.block li {
+  margin-bottom: 5px;
+  color: #777;
+  font-size: 0.85em; /* Even smaller font for transaction items */
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs button {
+    margin: 5px 0;
+    width: 80%;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .block {
+    width: 90%; /* Take up more space on smaller screens */
+  }
+}
