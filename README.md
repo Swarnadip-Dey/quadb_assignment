@@ -13,8 +13,8 @@ This project provides a simple blockchain visualizer with the ability to add tra
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <your_repository_url>
-    cd <your_repository_directory>
+    git clone https://github.com/Swarnadip-Dey/quadb_assignment.git
+    cd quadb_assignment
     ```
 
 2.  **Build and Run with Docker Compose:**
